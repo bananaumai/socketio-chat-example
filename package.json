@@ -1,0 +1,15 @@
+{
+  "name": "socketio-react-example",
+  "version": "1.0.0",
+  "description": "Example of socket.io with react",
+  "main": "server.js",
+  "repository": "https://github.com/bananaumai/socketio-react-example",
+  "scripts": {},
+  "author": "Yuta Shimakawa",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.3.5",
+    "express": "~4.10.2",
+    "socket.io": "^1.3.6"
+  }
+}
