@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input name="nickname" id="nickname" placeholder="nickname here..."/>
+      <input name="room" id="room" placeholder="room here..."/>
+      <button>JOIN</button>
+    </form>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#nickname').focus();
+      });
+      $('form').submit(function() {
+        Cookies.set('nickname', $('#nickname').val());
+      });
+    </script>
+  </body>
+</html>
